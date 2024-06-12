@@ -1,0 +1,97 @@
+#caixa-register{
+  margin: 0 5rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  height: 30rem;
+}
+#caixa-register p{
+  margin-left: 1rem;
+}
+/*email e senha*/
+#register-email{
+  display:inline;
+  margin-top: 2rem;
+}
+#register-email input{
+  background-color: transparent;
+  border: none;
+  margin-left: 0.7rem;
+  font-size: 1rem;
+  width: 17rem;
+  height: 2rem;
+}
+#div-register{
+  display:flex;
+  justify-content: end;
+}
+#link-register{
+  border: solid 1px;
+  border-radius: 0.9rem;
+  font-size: 1rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  margin: 1rem 4rem 0 0 ;
+}
+#link-register:hover{
+  background-color: rgba(34, 8, 8, 0.767);
+  color: white;
+  transition: 0.3s;
+}
+#botao-sign-in{
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  gap: 0.3rem;
+  margin: 0 4rem 0 0 ;
+}
+#botao-sign-in a{
+  color: green;
+}
+#input-senha{
+  margin-bottom: 0;
+}
+/*outras conexões*/
+#register-apps{
+  padding: 4rem;
+}
+
+
+/*geral*/
+.input-nome-register{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.icon-nome-register{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  border-radius: 0.9rem;
+}
+.icon-nome-register:hover{
+  background-color: rgba(34, 8, 8, 0.767);
+  color: white;
+  transition: 0.3s;
+}
+@media(max-width:768px){
+  #caixa-register{
+    display: flex;
+    flex-direction: column;
+  }
+  #link-register{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  #register-email{
+    padding-top: 3rem;
+  }
+  #register-apps{
+    display: flex;
+    padding-top: 0;
+  }
+  #register-apps p{
+    display: none;
+
+  }
+}

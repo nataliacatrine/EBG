@@ -1,0 +1,39 @@
+#botao-voltar:hover{
+  color: green;
+}
+#tempo-restante{
+  color: green;
+  font-weight: bold;
+}
+#guia-pagamento{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  height: 16rem;
+}
+
+/*qr code*/
+#qr-code{
+  display:grid;
+  justify-items: center;
+}
+#qr-code-img{
+  height: 13rem;
+  width: max-content;
+}
+#qr-code a{
+  border: solid 1px;
+  padding: 0.5rem;
+  border-radius: 0.5rem
+}
+#qr-code a:hover{
+  background-color: rgba(34, 8, 8, 0.767);
+  color: white;
+  transition: 0.3s;
+}
+@media(max-width:480px){
+  #guia-pagamento{
+    display: flex;
+    flex-direction: column;
+  }
+}

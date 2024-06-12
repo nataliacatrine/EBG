@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header>
+    <div id="header">
+      <nav class="menu">
+        <div class="caixa-menu" id="icon-home">
+          <a id="link-home" href="index.html">
+            <i class="bi bi-handbag"></i>
+            <h1>EcoBagsHouse</h1>
+          </a>
+        </div>
+        <div class="caixa-menu" id="pesquisa">
+          <i class="bi bi-search"></i>
+          <input type="search" placeholder="Search">
+        </div>
+  
+        <div id="carrinho-icon">
+          <a href="carrinho.html">
+            <i class="bi bi-cart3"></i>
+          </a>
+          <a href="login.html">
+            <i class="bi bi-person-circle"></i>
+          </a>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <h2>Cart</h2>
+    <h3>All items</h3>
+    <div id="div-carrinho">
+      <section>
+        <article class="caixa-produto">
+          <img class="img-produto-carrinho" src="https://i.pinimg.com/236x/a3/af/a2/a3afa26ba3d30bcfc7f1a2116e95eb95.jpg" alt="Ecobag Orgulho e Preconceito">
+          <p class="nome-produto-carrinho">Ecobag Pride&Prejudice</p>
+          <p class="preco-produto-carrinho" id="preco-1">R$30</p>
+          <div class="mais-menos-carrinho" >
+            <button class="menos" id="botao-menos-1">-</button>
+            <span id="quantidade-1">1</span>
+            <button class="mais" id="botao-mais-1">+</button>
+          </div>
+        </article>
+        <article class="caixa-produto">
+          <img class="img-produto-carrinho" src="https://i.pinimg.com/564x/d3/32/cb/d332cbeeb23b4166e354cb6408345008.jpg" alt="Ecobag Tulipa">
+          <p class="nome-produto-carrinho">Ecobag Tulip</p>
+          <p class="preco-produto-carrinho" id="preco-2">R$20</p>
+          <div class="mais-menos-carrinho" >
+            <button class="menos" id="botao-menos-2">-</button>
+            <span id="quantidade-2">1</span>
+            <button class="mais" id="botao-mais-2">+</button>
+          </div>
+        </article>
+        </section>
+        <section>
+          <article id="resumo-pedido">
+            <h4>Order Summary</h4>
+            <div id="preco-checkout">
+              <p>R$55</p>
+              <a href="resumo.html">Checkout now!</a>
+            </div>
+          </article>
+        </section>
+    </div>
+
+
+  </main>
+  
+
+
+
+
+  <footer>
+    <div id="redes-sociais">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    <div id="copyright">
+      <i class="bi bi-c-circle"></i>
+      <p>EcoBagsHouse</p>
+    </div>
+</footer>
+<script src="carrinho.js"></script>
+</body>
+</html>

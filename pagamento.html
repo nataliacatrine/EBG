@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script>
+    window.onload = function() {
+        var tempoRestante = 30 * 60; // 30 minutos em segundos
+        var timerElement = document.getElementById('tempo-restante');
+
+        function atualizarTimer() {
+            var horas = Math.floor(tempoRestante / 3600);
+            var minutos = Math.floor((tempoRestante % 3600) / 60);
+            var segundos = tempoRestante % 60;
+
+            // Adiciona um zero à esquerda se os segundos forem menores que 10
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+
+            timerElement.innerHTML = horas + ':' + minutos + ':' + segundos;
+
+            if (tempoRestante > 0) {
+                tempoRestante--;
+                setTimeout(atualizarTimer, 1000); // Atualiza a cada segundo
+            } else {
+                timerElement.innerHTML = "Tempo acabou!";
+            }
+        }
+
+        atualizarTimer();
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div id="header">
+      <nav class="menu">
+        <div class="caixa-menu" id="icon-home">
+          <a id="link-home" href="index.html">
+            <i class="bi bi-handbag"></i>
+            <h1>EcoBagsHouse</h1>
+          </a>
+        </div>
+        <div class="caixa-menu" id="pesquisa">
+          <i class="bi bi-search"></i>
+          <input type="search" placeholder="Search">
+        </div>
+  
+        <div id="carrinho-icon">
+          <a href="carrinho.html">
+            <i class="bi bi-cart3"></i>
+          </a>
+          <a href="login.html">
+            <i class="bi bi-person-circle"></i>
+          </a>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <a id="botao-voltar" href="resumo.html"><i class="bi bi-arrow-left"></i></a>
+    <section>
+      <h2>Awaiting payment</h2>
+      <p>Your code expires in <span id="tempo-restante">30:00:00</span> so make your payment as soon as possible</p>
+    </section>
+    <section id="guia-pagamento">
+      <article>
+        <h2>Pix payment guide</h2>
+        <p class="passo-a-passo">1. Open your banking app and find the 'Pix' payment option.</p>
+        <p class="passo-a-passo">2. Scan the QR code using your banking app.</p>
+        <p class="passo-a-passo">3. Confirm the information and complete the purchase</p>
+      </article>
+      <article id="qr-code">
+        <img id="qr-code-img" src="https://th.bing.com/th/id/OIP.-9N4K3Syg-OgbET8dgDwqAHaHa?rs=1&pid=ImgDetMain" alt="Código de pagamento pix: QR Code">
+        <a href="index.html">Return to home page</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div id="redes-sociais">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    <div id="copyright">
+      <i class="bi bi-c-circle"></i>
+      <p>EcoBagsHouse</p>
+    </div>
+  </footer>
+</body>
+</html> 
+
+
+

@@ -1,0 +1,104 @@
+#caixa-login{
+  margin: 0 5rem 0 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  height: 30rem;
+}
+#caixa-login p{
+  margin-left: 1rem;
+}
+/*email e senha*/
+#login-email{
+  display:inline;
+}
+#login-email input{
+  background-color: transparent;
+  border: none;
+  margin-left: 0.7rem;
+  font-size: 1rem;
+  width: 17rem;
+  height: 2rem;
+}
+#div-sign-in{
+  display:flex;
+  justify-content: end;
+}
+#link-sign-in{
+  border: solid 1px;
+  border-radius: 0.9rem;
+  font-size: 1rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  margin: 1rem 4rem 0 0 ;
+}
+#link-sign-in:hover{
+  background-color: rgba(34, 8, 8, 0.767);
+  color: white;
+  transition: 0.3s;
+}
+#botao-register{
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  gap: 0.3rem;
+  margin: 0 4rem 0 0 ;
+}
+#botao-register a{
+  color: green;
+}
+#botao-register a:hover{
+  text-decoration: underline;
+}
+/*outras conexões*/
+#login-apps{
+  padding: 4rem;
+}
+#input-senha{
+  margin-bottom: 0;
+}
+
+
+/*cadastre-se*/
+
+
+/*geral*/
+.input-nome-login{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.icon-nome-login{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  border-radius: 0.9rem;
+}
+.icon-nome-login:hover{
+  background-color: rgba(34, 8, 8, 0.767);
+  color: white;
+  transition: 0.3s;
+}
+
+@media(max-width:768px){
+  #caixa-login{
+    display: flex;
+    flex-direction: column;
+  }
+  #link-login{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  #login-email{
+    padding-top: 8rem;
+  }
+  #login-apps{
+    display: flex;
+    padding-top: 0;
+  }
+  #login-apps p{
+    display: none;
+
+  }
+}
+

@@ -1,0 +1,32 @@
+/*texto bags */
+.div-preco{
+  display: inline;
+}
+.nome-oferta{
+  font-weight: bold;
+}
+.ecobag-oferta{
+  text-align: center;
+}
+.preco-inicial{
+  color: rgb(62, 62, 62);
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+/*img*/
+.img-ofertas{
+  width: 13rem;
+  height: 15rem;
+}
+#ofertas-da-semana, #ofertas-do-dia{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:768px){
+  #ofertas-da-semana, #ofertas-do-dia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

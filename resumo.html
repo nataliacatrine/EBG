@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header>
+    <div id="header">
+      <nav class="menu">
+        <div class="caixa-menu" id="icon-home">
+          <a id="link-home" href="index.html">
+            <i class="bi bi-handbag"></i>
+            <h1>EcoBagsHouse</h1>
+          </a>
+        </div>
+        <div class="caixa-menu" id="pesquisa">
+          <i class="bi bi-search"></i>
+          <input type="search" placeholder="Search">
+        </div>
+  
+        <div id="carrinho-icon">
+          <a href="carrinho.html">
+            <i class="bi bi-cart3"></i>
+          </a>
+          <a href="login.html">
+            <i class="bi bi-person-circle"></i>
+          </a>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <a id="botao-voltar" href="carrinho.html"><i class="bi bi-arrow-left"></i></a>
+    <h2>Order Summary</h2>
+    <section id="endereco">
+      <h3>Shipping address</h3>
+      <article id="art-input-resumo">
+        <input class="input-resumo" type="name" placeholder="Full name">
+        <input class="input-resumo" type="number" placeholder="Phone number">
+        <input class="input-resumo" type="number" placeholder="Zip-code">
+      </article>
+    </section>
+    <div id="produtos-e-pagamento">
+      <section id="produtos-resumo">
+        <h3>Review items</h3>
+        <article class="caixa-produto-resumo">
+          <img class="img-produto-resumo" src="https://i.pinimg.com/236x/a3/af/a2/a3afa26ba3d30bcfc7f1a2116e95eb95.jpg" alt="Ecobag Orgulho e Preconceito">
+          <p class="nome-produto-resumo">Ecobag Pride&Prejudice</p>
+          <span id="quantidade-1"></span>
+          <p id="preco-1"></p>
+        </article>
+        <article class="caixa-produto-resumo">
+          <img class="img-produto-resumo" src="https://i.pinimg.com/564x/d3/32/cb/d332cbeeb23b4166e354cb6408345008.jpg" alt="Ecobag Tulipa">
+          <p class="nome-produto-resumo">Ecobag Tulip</p>
+          <span id="quantidade-2"></span>
+          <p id="preco-2"></p>
+        </article>
+      </section>
+      <section id="caixa-resumo-pg">
+        <article id="metodo-pagamento-resumo">
+          <h3>Payment method</h3>
+          <div id="div-pix">
+            <img id="icon-pix" src="https://www.imagensempng.com.br/wp-content/uploads/2023/06/logo-pix-icone-1024.png" alt="">
+            <p>Pix</p>
+          </div>
+          <p id="texto-pix">Pix payments are simple, practical and completed in seconds.</p>
+        </article>
+        <article id="total-resumo">
+          <p> Subtotal: <span id="preco-checkout"> </span></p>
+          <p>Shipping fee: R$0,00</p>
+          <p> Total: <span id="preco-total"> </span></p>
+          <a href="pagamento.html">Pay now</a>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div id="redes-sociais">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-whatsapp"></i>
+    </div>
+    <div id="copyright">
+      <i class="bi bi-c-circle"></i>
+      <p>EcoBagsHouse</p>
+    </div>
+  </footer>
+  <script src="resumo.js"></script>
+</body>
+</html>
